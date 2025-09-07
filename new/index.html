@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colégio Jardins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -38,31 +42,32 @@
     </div>
     <!-- FIM BANNER -->
 
-    <!-- CTA Section -->
-    <section class="cta-section">
+    <!-- CTA Strip -->
+    <section class="cta-strip">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Matrículas abertas!</h2>
-                    <p>Agende uma visita e venha conhecer nossa escola.</p>
-                    <a href="contato.html" class="btn btn-primary">Agende uma Visita</a>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <p class="cta-text"><strong>Matrículas abertas!</strong> Venha conhecer nosso colégio</p>
+                </div>
+                <div class="col-md-3 text-md-right">
+                    <a href="contato.html" class="btn btn-cta">Agende uma Visita</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- FIM CTA Section -->
+    <!-- FIM CTA Strip -->
 
     <!-- QUEM SOMOS -->
     <section class="about py-5 section-alternate">
         <div class="container">
             <div class="row">
-                <div class="col-sm-7 col-sm-push-5 left-block"> <span class="sm-head">Colégio Jardins</span>
+                <div class="col-md-7 col-md-push-5 left-block"> <span class="sm-head">Colégio Jardins</span>
                     <h2>Nossa História</h2>
                     <p>Fundado em 1997 o Colégio Jardins cultiva o lema de que juntos Educação, Amor e Seriedade são as bases para uma formação integral do aluno em todas as dimensões,
                         possibilitando que ele seja um agente transformador de si e da sociedade.</p>
                     <div class="know-more-wrapper"> <a href="historia-2.html" class="know-more">Saiba Mais <span class="icon-more-icon"></span></a> </div>
                 </div>
-                <div class="col-sm-5 col-sm-pull-7">
+                <div class="col-md-5 col-md-pull-7">
                     <iframe width="100%" height="270" src="https://www.youtube.com/embed/BIjvGwP3qGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -71,88 +76,93 @@
     <!-- FIM QUEM SOMOS -->
 
     <!-- CURSOS -->
-    <section class="how-study padding-lg">
+    <section class="courses-section padding-lg">
         <div class="container">
-            <h2 class="text-center mb-4"> NOSSOS CURSOS <span>Priorizamos a formação integral de nossos alunos.</span></h2>
-            <div class="row justify-content-center">
-                <div class="col-sm-10">
-                    <div class="row">
-                        <div class="col-sm-3 course-item">
-                            <a href="educacao_infantil-2.html">
-                                <div class="course-image">
-                                    <img src="images/infantil.png" class="img-responsive" alt="Ensino Infantil">
-                                </div>
-                                <div class="course-overlay">
-                                    <div class="course-overlay-text">Saiba Mais</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 course-item">
-                            <a href="ensino_fundamentalI-2.html">
-                                <div class="course-image">
-                                    <img src="images/fundamental.png" class="img-responsive" alt="Ensino Fundamental">
-                                </div>
-                                <div class="course-overlay">
-                                    <div class="course-overlay-text">Saiba Mais</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 course-item">
-                            <a href="ensino_medio-2.html">
-                                <div class="course-image">
-                                    <img src="images/medio.png" class="img-responsive" alt="Ensino Médio">
-                                </div>
-                                <div class="course-overlay">
-                                    <div class="course-overlay-text">Saiba Mais</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-3 course-item">
-                            <a href="ensino_tecnico-2.html">
-                                <div class="course-image">
-                                    <img src="images/tecnico.png" class="img-responsive" alt="Ensino Técnico">
-                                </div>
-                                <div class="course-overlay">
-                                    <div class="course-overlay-text">Saiba Mais</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+            <h2 class="text-center mb-5">Nossos Cursos <span>Priorizamos a formação integral de nossos alunos.</span></h2>
+
+            <div class="row course-block align-items-center justify-content-center">
+                <div class="col-md-5">
+                    <img src="images/infantil.png" class="img-fluid" alt="Educação Infantil">
+                </div>
+                <div class="col-md-6">
+                    <h3>Educação Infantil</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <a href="educacao_infantil-2.html" class="btn btn-primary">Saiba Mais</a>
                 </div>
             </div>
+
+            <div class="row course-block align-items-center justify-content-center">
+                <div class="col-md-5 order-md-2">
+                    <img src="images/fundamental.png" class="img-fluid" alt="Ensino Fundamental">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Ensino Fundamental</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <a href="ensino_fundamentalI-2.html" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="row course-block align-items-center justify-content-center">
+                <div class="col-md-5">
+                    <img src="images/medio.png" class="img-fluid" alt="Ensino Médio">
+                </div>
+                <div class="col-md-6">
+                    <h3>Ensino Médio</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <a href="ensino_medio-2.html" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="row course-block align-items-center justify-content-center">
+                <div class="col-md-5 order-md-2">
+                    <img src="images/tecnico.png" class="img-fluid" alt="Ensino Técnico">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3>Ensino Técnico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    <a href="ensino_tecnico-2.html" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- FIM CURSOS -->
 
     <!-- ESTRUTURA -->
-    <section class="campus-tour section-alternate">
+    <section class="structure-section section-alternate">
         <div class="container">
-            <h2 class="text-center mb-4">CONHEÇA NOSSA ESTRUTURA<span></span></h2>
+            <h2 class="text-center">Colégio <span>Conheça nossa estrutura</span></h2>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-10">
-                <div class="row no-gutters gallery">
-                    <div class="col-md-3">
-                        <a href="images/fotos/colegio/1.jpg" class="gallery-item">
-                            <figure><img src="images/fotos/colegio/1.jpg" class="img-responsive" alt=""></figure>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="images/fotos/colegio/2.jpg" class="gallery-item">
-                            <figure><img src="images/fotos/colegio/2.jpg" class="img-responsive" alt=""></figure>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="images/fotos/colegio/3.jpg" class="gallery-item">
-                            <figure><img src="images/fotos/colegio/3.jpg" class="img-responsive" alt=""></figure>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="images/fotos/colegio/4.jpg" class="gallery-item">
-                            <figure><img src="images/fotos/colegio/4.jpg" class="img-responsive" alt=""></figure>
-                        </a>
-                    </div>
-                </div>
+        <div class="gallery-grid">
+            <div class="gallery-item item-1">
+                <a href="album-area-verde.html">
+                    <img src="images/fotos/area_verde/1.jpg" alt="Área Verde">
+                    <div class="tag">Área Verde</div>
+                </a>
+            </div>
+            <div class="gallery-item item-2">
+                <a href="album-colegio.html">
+                    <img src="images/fotos/colegio/1.jpg" alt="Colégio">
+                    <div class="tag">Colégio</div>
+                </a>
+            </div>
+            <div class="gallery-item item-3">
+                <a href="album-instituto.html">
+                    <img src="images/fotos/instituto/1.jpg" alt="Instituto">
+                    <div class="tag">Instituto</div>
+                </a>
+            </div>
+            <div class="gallery-item item-4">
+                <a href="album-mediterraneo.html">
+                    <img src="images/fotos/mediterraneo/1.jpg" alt="Mediterrâneo">
+                    <div class="tag">Mediterrâneo</div>
+                </a>
+            </div>
+            <div class="gallery-item item-5">
+                <a href="album-praca-artes.html">
+                    <img src="images/fotos/praca_artes_copej/1.jpg" alt="Praça das Artes COPEJ">
+                    <div class="tag">Praça das Artes COPEJ</div>
+                </a>
             </div>
         </div>
     </section>
@@ -166,18 +176,50 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros1.jpg" class="img-fluid" alt=""></a></div>
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros2.jpg" class="img-fluid" alt=""></a></div>
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros3.jpg" class="img-fluid" alt=""></a></div>
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros1.jpg" class="img-fluid" alt=""></a></div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros1.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros2.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros3.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros1.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros2.jpg" class="img-fluid" alt=""></a></div>
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros3.jpg" class="img-fluid" alt=""></a></div>
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros1.jpg" class="img-fluid" alt=""></a></div>
-                            <div class="col-md-3"><a href="#"><img src="images/parceiros2.jpg" class="img-fluid" alt=""></a></div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros2.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros3.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros1.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="partner-logo">
+                                    <img src="images/parceiros2.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,6 +279,17 @@
                     enabled: true
                 }
             });
+
+            // Back to top button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+
+            
         });
     </script>
 </body>
