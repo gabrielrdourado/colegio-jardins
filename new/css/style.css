@@ -533,3 +533,57 @@ section {
     background-color: #003366; /* Azul */
     color: white;
 }
+
+/* Footer Social Icons */
+.footer .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.footer .social-icon:hover {
+    background-color: #f0bc01; /* Amarelo */
+    color: #003366; /* Azul */
+}
+
+/* Footer Buttons */
+.footer .btn-primary {
+    background-color: #f0bc01;
+    border-color: #f0bc01;
+    color: #003366;
+}
+
+.footer .btn-primary:hover {
+    background-color: #e6c200;
+    border-color: #e6c200;
+}
+
+.footer .btn-secondary {
+    background-color: transparent;
+    border-color: #f0bc01;
+    color: #f0bc01;
+}
+
+.footer .btn-secondary:hover {
+    background-color: #f0bc01;
+    color: #003366;
+}
+
+/* Header Social Icons */
+.social-icons-header .nav-link {
+    color: white;
+    font-size: 18px;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons-header .nav-link:hover {
+    color: #f0bc01; /* Amarelo */
+}
