@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura - Colégio Jardins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .inner-banner {
+            padding: 60px 0;
+            background-color: #f8f9fa; /* Light gray background */
+            text-align: center;
+        }
+
+        .inner-banner .content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .inner-banner .content h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #007bff; /* Blue color */
+            margin: 20px auto 0;
+        }
+        .gallery-section .nav-tabs .nav-link {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    <div id="header-placeholder-spacer"></div>
+
+    <!-- BANNER -->
+    <div class="inner-banner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="content text-center">
+                        <h1>Nossa Estrutura</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM BANNER -->
+
+    <!-- CONTEÚDO -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <ul class="nav nav-tabs" id="gallery-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="area-verde-tab" data-toggle="tab" href="#area-verde" role="tab">Área Verde</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="fund-1-tab" data-toggle="tab" href="#fund-1" role="tab">Fundamental 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="fund-2-tab" data-toggle="tab" href="#fund-2" role="tab">Fundamental 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="infantil-tab" data-toggle="tab" href="#infantil" role="tab">Infantil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="quadras-tab" data-toggle="tab" href="#quadras" role="tab">Quadras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="sala-informatica-tab" data-toggle="tab" href="#sala-informatica" role="tab">Sala de Informática</a>
+                </li>
+            </ul>
+            <div class="tab-content py-4" id="gallery-tabs-content">
+                <div class="tab-pane fade show active" id="area-verde" role="tabpanel">
+                    <div class="gallery-grid">
+                        <a href="images/Area verde/IMG_3224.jpg" class="gallery-item"><img src="images/Area verde/IMG_3224.jpg" alt=""></a>
+<a href="images/Area verde/IMG_3247.jpg" class="gallery-item"><img src="images/Area verde/IMG_3247.jpg" alt=""></a>
+<a href="images/Area verde/IMG_3252.jpg" class="gallery-item"><img src="images/Area verde/IMG_3252.jpg" alt=""></a>
+<a href="images/Area verde/IMG_3260.jpg" class="gallery-item"><img src="images/Area verde/IMG_3260.jpg" alt=""></a>
+<a href="images/Area verde/IMG_3265.jpg" class="gallery-item"><img src="images/Area verde/IMG_3265.jpg" alt=""></a>
+<a href="images/Area verde/IMG_3278.jpg" class="gallery-item"><img src="images/Area verde/IMG_3278.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="fund-1" role="tabpanel">
+                    <div class="gallery-grid">
+                        <a href="images/Fund 1/IMG_1969.jpg" class="gallery-item"><img src="images/Fund 1/IMG_1969.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_1973.jpg" class="gallery-item"><img src="images/Fund 1/IMG_1973.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2216.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2216.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2217.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2217.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2221.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2221.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2226.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2226.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2228.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2228.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2238.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2238.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2240.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2240.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2269.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2269.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2283.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2283.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2284.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2284.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2285.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2285.jpg" alt=""></a>
+<a href="images/Fund 1/IMG_2286.jpg" class="gallery-item"><img src="images/Fund 1/IMG_2286.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="fund-2" role="tabpanel">
+                    <div class="gallery-grid">
+                        <a href="images/Fund 2/IMG_1562-2.jpg" class="gallery-item"><img src="images/Fund 2/IMG_1562-2.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2190.jpg" class="gallery-item"><img src="images/Fund 2/IMG_2190.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2191.jpg" class="gallery-item"><img src="images/Fund 2/IMG_2191.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2191(1).jpg" class="gallery-item"><img src="images/Fund 2/IMG_2191(1).jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2198.jpg" class="gallery-item"><img src="images/Fund 2/IMG_2198.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2198(1).jpg" class="gallery-item"><img src="images/Fund 2/IMG_2198(1).jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2200.jpg" class="gallery-item"><img src="images/Fund 2/IMG_2200.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2200(1).jpg" class="gallery-item"><img src="images/Fund 2/IMG_2200(1).jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2208.jpg" class="gallery-item"><img src="images/Fund 2/IMG_2208.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2208(1).jpg" class="gallery-item"><img src="images/Fund 2/IMG_2208(1).jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2210.jpg" class="gallery-item"><img src="images/Fund 2/IMG_2210.jpg" alt=""></a>
+<a href="images/Fund 2/IMG_2210(1).jpg" class="gallery-item"><img src="images/Fund 2/IMG_2210(1).jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="infantil" role="tabpanel">
+                    <div class="gallery-grid">
+                        <a href="images/Infantil/IMG_2258.jpg" class="gallery-item"><img src="images/Infantil/IMG_2258.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2266.jpg" class="gallery-item"><img src="images/Infantil/IMG_2266.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2271.jpg" class="gallery-item"><img src="images/Infantil/IMG_2271.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2274.jpg" class="gallery-item"><img src="images/Infantil/IMG_2274.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2275.jpg" class="gallery-item"><img src="images/Infantil/IMG_2275.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2276.jpg" class="gallery-item"><img src="images/Infantil/IMG_2276.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2277.jpg" class="gallery-item"><img src="images/Infantil/IMG_2277.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2278.jpg" class="gallery-item"><img src="images/Infantil/IMG_2278.jpg" alt=""></a>
+<a href="images/Infantil/IMG_2282.jpg" class="gallery-item"><img src="images/Infantil/IMG_2282.jpg" alt=""></a>
+<a href="images/Infantil/IMG_3423.jpg" class="gallery-item"><img src="images/Infantil/IMG_3423.jpg" alt=""></a>
+<a href="images/Infantil/IMG_3425.jpg" class="gallery-item"><img src="images/Infantil/IMG_3425.jpg" alt=""></a>
+<a href="images/Infantil/IMG_3427.jpg" class="gallery-item"><img src="images/Infantil/IMG_3427.jpg" alt=""></a>
+<a href="images/Infantil/IMG_3433.jpg" class="gallery-item"><img src="images/Infantil/IMG_3433.jpg" alt=""></a>
+<a href="images/Infantil/IMG_3442.jpg" class="gallery-item"><img src="images/Infantil/IMG_3442.jpg" alt=""></a>
+<a href="images/Infantil/IMG_3448.jpg" class="gallery-item"><img src="images/Infantil/IMG_3448.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="quadras" role="tabpanel">
+                    <div class="gallery-grid">
+                        <a href="images/Quadras/IMG_3048.jpg" class="gallery-item"><img src="images/Quadras/IMG_3048.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3051.jpg" class="gallery-item"><img src="images/Quadras/IMG_3051.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3383.jpg" class="gallery-item"><img src="images/Quadras/IMG_3383.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3390.jpg" class="gallery-item"><img src="images/Quadras/IMG_3390.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3400.jpg" class="gallery-item"><img src="images/Quadras/IMG_3400.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3403.jpg" class="gallery-item"><img src="images/Quadras/IMG_3403.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3409.jpg" class="gallery-item"><img src="images/Quadras/IMG_3409.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3412.jpg" class="gallery-item"><img src="images/Quadras/IMG_3412.jpg" alt=""></a>
+<a href="images/Quadras/IMG_3421.jpg" class="gallery-item"><img src="images/Quadras/IMG_3421.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sala-informatica" role="tabpanel">
+                    <div class="gallery-grid">
+                        <a href="images/Sala de informatica/IMG_2232.jpg" class="gallery-item"><img src="images/Sala de informatica/IMG_2232.jpg" alt=""></a>
+<a href="images/Sala de informatica/IMG_2235.jpg" class="gallery-item"><img src="images/Sala de informatica/IMG_2235.jpg" alt=""></a>
+<a href="images/Sala de informatica/IMG_3605-Enhanced-NR.jpg" class="gallery-item"><img src="images/Sala de informatica/IMG_3605-Enhanced-NR.jpg" alt=""></a>
+<a href="images/Sala de informatica/IMG_3609-Enhanced-NR.jpg" class="gallery-item"><img src="images/Sala de informatica/IMG_3609-Enhanced-NR.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM CONTEÚDO -->
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("templates/header.html", function() {
+                // Set active link
+                $('#navbarNav .nav-item a[href="estrutura.html"]').parent().addClass('active');
+            });
+            $("#footer-placeholder").load("templates/footer.html");
+
+            // Back to top button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+            $('.back-to-top').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+            // Magnific Popup
+            $('.gallery-grid').each(function() { // the containers for all your galleries
+                $(this).magnificPopup({
+                    delegate: 'a', // the selector for gallery item
+                    type: 'image',
+                    gallery: {
+                        enabled:true
+                    }
+                });
+            });
+
+            // Activate tab from hash
+            var hash = window.location.hash;
+            if (hash) {
+                $('#gallery-tabs a[href="' + hash + '"]').tab('show');
+            }
+        });
+    </script>
+</body>
+</html>
