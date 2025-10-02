@@ -26,38 +26,31 @@
                 <div class="col-lg-8">
                     <div class="form-container">
                         <h2>Trabalhe Conosco</h2>
-                        <div class="form-messages"></div>
-                        <form class="ajax-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+                        <p>Envie suas informações e entraremos em contato.</p>
+                        <form id="work-with-us-form">
                             <div class="form-group">
                                 <label for="name">Nome</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo" required>
                             </div>
                             <div class="form-group">
                                 <label for="age">Idade</label>
-                                <input type="number" class="form-control" id="age" name="age" placeholder="Sua idade">
+                                <input type="number" class="form-control" id="age" name="age" placeholder="Sua idade" required>
                             </div>
                             <div class="form-group">
                                 <label for="address">Endereço</label>
-                                <input type="text" class="form-control" id="address" name="address" placeholder="Seu endereço completo">
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Seu endereço completo" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone">Telefone</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX" required>
                             </div>
                             <div class="form-group">
                                 <label for="role">Vaga de Interesse</label>
-                                <input type="text" class="form-control" id="role" name="role" placeholder="Ex: Professor de Matemática">
-                            </div>
-                            <div class="form-group">
-                                <label for="curriculum">Currículo</label>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="curriculum" name="curriculum">
-                                    <label class="custom-file-label" for="curriculum">Escolha o arquivo</label>
-                                </div>
+                                <input type="text" class="form-control" id="role" name="role" placeholder="Ex: Professor de Matemática" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Mensagem</label>
@@ -76,7 +69,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/form-ajax.js"></script>
     <script>
         $(function(){
             $("#header-placeholder").load("templates/header.html", function() {
@@ -106,12 +98,6 @@
             });
             $("#footer-placeholder").load("templates/footer.html");
 
-            // Update custom file input label
-            $(".custom-file-input").on('change', function() {
-                var fileName = $(this).val().split('\\').pop();
-                $(this).next('.custom-file-label').addClass("selected").html(fileName);
-            });
-
             // Back to top button
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 100) {
@@ -120,6 +106,24 @@
                     $('.back-to-top').fadeOut();
                 }
             });
+        });
+
+        document.getElementById('work-with-us-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const address = document.getElementById('address').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const role = document.getElementById('role').value;
+            const message = document.getElementById('message').value;
+
+            const whatsappMessage = `Olá, tenho interesse em trabalhar no Colégio Jardins.\n\nNome: ${name}\nIdade: ${age}\nEndereço: ${address}\nEmail: ${email}\nTelefone: ${phone}\nVaga de Interesse: ${role}\n\nMensagem: ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=551996143513&text=${encodedMessage}`;
+
+            window.open(whatsappUrl, '_blank');
         });
     </script>
 </body>

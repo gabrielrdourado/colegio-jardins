@@ -24,81 +24,86 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <div class="form-container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h2>Entre em Contato</h2>
-                                <div class="form-messages"></div>
-                                <form class="ajax-form" action="https://formspree.io/f/xvgbewow" method="POST">
-                                    <div class="form-group">
-                                        <label for="name">Nome</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Seu melhor email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="phone">Telefone</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="subject">Assunto</label>
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto da mensagem">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message">Mensagem</label>
-                                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Sua mensagem"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                                </form>
+                    <div class="text-center">
+                        <h2>Entre em Contato</h2>
+                        <p>Utilize os canais abaixo para falar conosco.</p>
+                    </div>
+
+                    <div class="row text-center justify-content-center">
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <i class="fas fa-calendar-alt fa-2x text-primary mb-3"></i>
+                                    <h5 class="card-title">Agenda Edu</h5>
+                                    <a href="https://www.agendaedu.com/" target="_blank" class="btn btn-primary">Acessar</a>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="contact-info-wrapper">
-                                    <h3>Nossas Informações</h3>
-                                    <div class="row">
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-phone"></i> Telefones</h5>
-                                            <p class="mb-0">(19) 99614-3513</p>
-                                            <p class="mb-0">(19) 3269-9922</p>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-building"></i> Entrada Administrativa</h5>
-                                            <p class="mb-0">Av. Ana Beatriz Bierrembach, 165 - Vila Mimosa, Campinas - SP</p>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-child"></i> Educação Infantil</h5>
-                                            <p class="mb-0">Rua das Glicínias, 80 - Vila Mimosa</p>
-                                            <small class="text-muted">Horário: 06:45h às 18:30h</small>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-book-open"></i> Ensino Fundamental I</h5>
-                                            <p class="mb-0">Rua das Violetas, 95 - Vila Mimosa</p>
-                                            <small class="text-muted">Horário: 06:45h às 07:35 – 11:50h às 13:10h – 17:20h às 18:00h</small>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-book"></i> Ensino Fundamental II</h5>
-                                            <p class="mb-0">Av. Ana Beatriz Bierrembach, 165 - Vila Mimosa</p>
-                                            <small class="text-muted">Horário: 06:45h às 07:35 – 11:50h às 13:10h – 17:20h às 18:00h</small>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-user-graduate"></i> Ensino Médio</h5>
-                                            <p class="mb-0">Av. Ana Beatriz Bierrembach, 165 - Vila Mimosa</p>
-                                        </div>
-                                        <div class="col-md-12 mb-3">
-                                            <h5><i class="fas fa-envelope"></i> Contatos por Email</h5>
-                                            <p class="mb-0"><strong>Secretaria:</strong> secretaria@colegiojardins.com (08:00h às 12:00h e 13:15h às 18:00h)</p>
-                                            <p class="mb-0"><strong>Recepção:</strong> contato@colegiojardins.com (07:00h às 18:00h)</p>
-                                            <p class="mb-0"><strong>Financeiro:</strong> financeiro@colegiojardins.com (08:00h às 13:00h e 14:30h às 18:00h)</p>
-                                            <p class="mb-0"><strong>Coord. Ed. Infantil e Fund. I:</strong> tatiane@colegiojardins.com</p>
-                                            <p class="mb-0"><strong>Coord. Fund. II e Médio:</strong> adriana@colegiojardins.com</p>
-                                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <i class="fab fa-whatsapp fa-2x text-primary mb-3"></i>
+                                    <h5 class="card-title">WhatsApp</h5>
+                                    <a href="https://api.whatsapp.com/send?phone=551996143513" class="btn btn-primary">Conversar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                                    <h5 class="card-title">Telefone</h5>
+                                    <a href="tel:+551932699922" class="btn btn-primary">Ligar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-wrapper mt-5">
+                        <h3>Nossas Informações</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <h5><i class="fas fa-building"></i> Entrada Administrativa</h5>
+                                        <p class="mb-0">Av. Ana Beatriz Bierrembach, 165 - Vila Mimosa, Campinas - SP</p>
                                     </div>
-                                    <div class="map-wrapper mt-4">
-                                        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Av.%20Ana%20Beatriz%20Bierrembach,%20165%20-%20Vila%20Mimosa+(Col%C3%A9gio%20Jardin's)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte">calculer la population sur la carte</a></iframe>
+                                    <div class="col-md-12 mb-3">
+                                        <h5><i class="fas fa-child"></i> Educação Infantil</h5>
+                                        <p class="mb-0">Rua das Glicínias, 80 - Vila Mimosa</p>
+                                        <small class="text-muted">Horário: 06:45h às 18:30h</small>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <h5><i class="fas fa-book-open"></i> Ensino Fundamental I</h5>
+                                        <p class="mb-0">Rua das Violetas, 95 - Vila Mimosa</p>
+                                        <small class="text-muted">Horário: 06:45h às 07:35 – 11:50h às 13:10h – 17:20h às 18:00h</small>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <h5><i class="fas fa-book"></i> Ensino Fundamental II</h5>
+                                        <p class="mb-0">Av. Ana Beatriz Bierrembach, 165 - Vila Mimosa</p>
+                                        <small class="text-muted">Horário: 06:45h às 07:35 – 11:50h às 13:10h – 17:20h às 18:00h</small>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <h5><i class="fas fa-user-graduate"></i> Ensino Médio</h5>
+                                        <p class="mb-0">Av. Ana Beatriz Bierrembach, 165 - Vila Mimosa</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <h5><i class="fas fa-envelope"></i> Contatos por Email</h5>
+                                        <p class="mb-0"><strong>Secretaria:</strong> secretaria@colegiojardins.com (08:00h às 12:00h e 13:15h às 18:00h)</p>
+                                        <p class="mb-0"><strong>Recepção:</strong> contato@colegiojardins.com (07:00h às 18:00h)</p>
+                                        <p class="mb-0"><strong>Financeiro:</strong> financeiro@colegiojardins.com (08:00h às 13:00h e 14:30h às 18:00h)</p>
+                                        <p class="mb-0"><strong>Coord. Ed. Infantil e Fund. I:</strong> tatiane@colegiojardins.com</p>
+                                        <p class="mb-0"><strong>Coord. Fund. II e Médio:</strong> adriana@colegiojardins.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-wrapper mt-4">
+                            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Av.%20Ana%20Beatriz%20Bierrembach,%20165%20-%20Vila%20Mimosa+(Col%C3%A9gio%20Jardin's)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/fr/calculer-la-population-sur-une-carte">calculer la population sur la carte</a></iframe>
                         </div>
                     </div>
                 </div>

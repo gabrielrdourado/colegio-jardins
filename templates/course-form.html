@@ -1,0 +1,35 @@
+<div class="enquire-now mt-4">
+    <h3 class="text-center mb-4">Entre em Contato</h3>
+    <form id="course-form">
+        <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail" required>
+        </div>
+        <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <input type="text" id="phone" name="phone" class="form-control" placeholder="Telefone" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Solicitar Atendimento</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('course-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const course = document.querySelector('h1').textContent.trim();
+
+        const message = `Olá, tenho interesse no curso de ${course}.\n\nNome: ${name}\nEmail: ${email}\nTelefone: ${phone}`;
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=551996143513&text=${encodedMessage}`;
+
+        window.open(whatsappUrl, '_blank');
+    });
+</script>
